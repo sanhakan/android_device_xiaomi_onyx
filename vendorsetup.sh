@@ -13,7 +13,7 @@ rm -rf vendor/xiaomi/onyx-miuicamera && git clone https://gitlab.com/crdroidandr
 echo 'Cloning process is completed, now its time for lunch'
 
 # Signig Stuff
-git clone https://github.com/Lafactorial/vendor_lineage-priv_keys -b ascp vendor/custom-priv/keys
-cd vendor/custom-priv/keys
+git clone https://github.com/Lafactorial/vendor_lineage-priv_keys -b main vendor/lineage-priv/keys
+cd vendor/lineage-priv/keys
 ./keys.sh
 cd ../../../
