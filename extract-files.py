@@ -274,8 +274,6 @@ blob_fixups: blob_fixups_user_type = {
         .add_needed('libinput_shim.so')
         .remove_needed('android.hidl.base@1.0.so'),
 
-<<<<<<< HEAD
-=======
     'vendor/bin/system_dlkm_modprobe.sh': blob_fixup()
         .regex_replace(
             r'for kernel_ver_dir in \$\{system_dlkm_dir\}/\*;',
@@ -285,7 +283,6 @@ blob_fixups: blob_fixups_user_type = {
     'vendor/etc/clstc_config_library.xml': blob_fixup()
         .regex_replace(r'<library>\s*<name>libdolbyclstc[\s\S]*?</library>', ''),
 
->>>>>>> c4bed8b418d2980a4d39c7f1851015d4cb250ed2
     'vendor/etc/sensors/hals.conf': blob_fixup()
         .regex_replace('.*vl53l8.*\n?', ''),
 
